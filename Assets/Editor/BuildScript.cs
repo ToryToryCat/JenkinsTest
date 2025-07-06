@@ -12,7 +12,7 @@ public class BuildScript
             "Assets/Scenes/SampleScene.unity",
         };
 
-        string outputPath = "Builds/Android/MyGame.apk";  // 출력 위치
+        string outputPath = "Builds/Android/MyGame1.apk";  // 출력 위치
 
         string directory = Path.GetDirectoryName(outputPath);
         if (!Directory.Exists(directory))
