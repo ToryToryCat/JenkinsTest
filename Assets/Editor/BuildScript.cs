@@ -9,10 +9,7 @@ public class BuildScript
         //EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Android, BuildTarget.Android);
 
         string[] scenes = {
-            "Assets/Scenes/LogoScene.unity",
-            "Assets/Scenes/MainScene.unity",
-            "Assets/Scenes/MoreGameScene.unity",
-            "Assets/Scenes/GameScene.unity"
+            "Assets/Scenes/SampleScene.unity",
         };
 
         string outputPath = "Builds/Android/MyGame.apk";  // 출력 위치
@@ -27,11 +24,11 @@ public class BuildScript
         EditorUserBuildSettings.buildAppBundle = false;
 
         //키스토어 설정
-        PlayerSettings.Android.useCustomKeystore = true;
-        PlayerSettings.Android.keystoreName = "dancingkong.keystore"; // 키스토어 파일명
-        PlayerSettings.Android.keystorePass = "dancingkong";
-        PlayerSettings.Android.keyaliasName = "dancingkong";
-        PlayerSettings.Android.keyaliasPass = "dancingkong";
+        //PlayerSettings.Android.useCustomKeystore = true;
+        //PlayerSettings.Android.keystoreName = "dancingkong.keystore"; // 키스토어 파일명
+        //PlayerSettings.Android.keystorePass = "dancingkong";
+        //PlayerSettings.Android.keyaliasName = "dancingkong";
+        //PlayerSettings.Android.keyaliasPass = "dancingkong";
 
         BuildPlayerOptions buildOptions = new BuildPlayerOptions
         {
