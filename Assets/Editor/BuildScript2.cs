@@ -12,9 +12,9 @@ public class BuildScript2
             "Assets/Scenes/SampleScene.unity",
         };
 
-        string outputPath = "Builds/Android/MyGame2.apk";  // 출력 위치
+        string outputPath1 = "Builds/Android/MyGame2.apk";  // 출력 위치
 
-        string directory = Path.GetDirectoryName(outputPath);
+        string directory = Path.GetDirectoryName(outputPath1);
         if (!Directory.Exists(directory))
         {
             Directory.CreateDirectory(directory);
@@ -33,7 +33,7 @@ public class BuildScript2
         BuildPlayerOptions buildOptions = new BuildPlayerOptions
         {
             scenes = scenes,
-            locationPathName = outputPath,
+            locationPathName = outputPath1,
             target = BuildTarget.Android,
             options = BuildOptions.None
         };
